@@ -4,6 +4,17 @@
         <meta charset="UTF-8">
         <title>세미프로젝트V1-list</title>
         <link rel="stylesheet" href="/css/base.css">
+        <style>
+            table { width: 75%; margin: 0 auto; border-collapse: collapse;
+                    table-layout: fixed; }
+            th, td { border: 1px solid black; text-align: center; padding: 10px; }
+            td:nth-child(2) { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+            button { width: 100px; padding: 5px; margin-right: -10px; }
+
+            .newbtn { text-align: right; border: none;}
+            .tbnav { border: none; }
+            .cpage { font-weight: bold; color: red; font-size: 35px; }
+        </style>
     </head>
     <body>
         <div id="wrap">
@@ -22,8 +33,19 @@
         </nav>
         <div id="container">
         <h2>게시판</h2>
+
             <table>
+                <colgroup> <!-- 테이블 컬럼 스타일 정의 -->
+                    <col style="width: 10%">
+                    <col style="">
+                    <col style="width: 15%">
+                    <col style="width: 15%">
+                    <col style="width: 10%">
+                </colgroup>
                 <thead>
+                    <tr><td colspan="5" class="newbtn"><button type="button">글쓰기</button>
+                        </td></tr>
+
                 <tr>
                     <th>번호</th>
                     <th>제목</th>
@@ -110,6 +132,11 @@
                     <td>777</td>
                 </tr>
                </tbody>
+                <tfoot>
+                    <tr><td colspan="5" class="tbnav">
+                        <span>◁ ◀◀ <span class="cpage">1</span> 2 3 4 5 6 7 8 9 10 ▶▶ ▷</span>
+                        </td></tr>
+                </tfoot>
             </table>
         </div>
         </div>

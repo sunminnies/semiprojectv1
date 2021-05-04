@@ -4,6 +4,14 @@
         <meta charset="UTF-8">
         <title>세미프로젝트V1-join</title>
         <link rel="stylesheet" href="/css/base.css">
+        <style>
+            #joinfrm { /*border: 1px solid red;*/ width: 300px; margin: 100px auto; }
+            #joinfrm div { margin-bottom: 10px; }
+            #joinfrm label { display: inline-block; width: 115px; /*border: 1px solid blue;*/
+                            text-align: right; font-weight: bold }
+            input, button { padding: 5px }
+            input { width: 150px }
+        </style>
     </head>
     <body>
         <div id="wrap">
@@ -41,6 +49,11 @@
                 <input type="text" name="name" id="name">
                 </div>
                 <div>
+                <label for="email">이메일</label>
+                <input type="text" name="email" id="email">
+                </div>
+                <div>
+                <label></label>
                 <button type="button">입력완료</button>
                 <button type="reset">다시입력</button>
                 </div>
