@@ -1,0 +1,46 @@
+#wrap { width: 1150px; margin: 0 auto; border: 3px solid black; }
+        header, main, footer, nav { /*border: 1px solid red;*/ }
+
+/*header 스타일*/
+header { height: 100px; }
+header h1 { background: #dcdcdc; padding: 20px 50px; margin: 10px 10px 10px 25px;
+            width: 70px; float: left; }
+header p { float: left; margin-top: 65px; }
+header ul { float: right; margin-right: 30px;}
+header li { float: left; padding: 5px; }
+
+/*nav 스타일*/
+nav { height: 35px; clear: both; padding-left: 20px; padding-top: 5px; background: #dcdcdc; }
+nav input { border: 1px solid black; padding: 5px; width: 325px; }
+nav select { padding: 5px; width: 150px; text-decoration: underline; font-size: 14px; }
+nav button { padding: 5px; width: 125px; background: darkgray; color: white;
+             font-size: 14px; }
+
+/*main-aside 스타일*/
+aside { /*border: 1px solid red;*/ width: 305px; float: left; }
+aside ul { margin: 10px 10px 20px 20px; border: 4px solid black; }
+aside li { border-bottom: 1px solid black; padding: 7px 14px; font-weight: bold;
+            font-size: 18px; }
+aside li:last-child { border: none; }
+
+/*main-banner 스타일*/
+#banner { border: 4px solid black; width: 800px; float: right; height: 245px;
+          margin: 10px 25px 20px 0}
+#banner h3 { margin-top: 105px; text-align: center; }
+#banner ul { margin-top: 65px; margin-left: 600px; }
+#banner li { float: left; padding: 8px 12px; background: #dcdcdc; margin-right: 10px;
+             font-weight: bold; font-size: 18px; }
+
+/*main-prodlist 스타일*/
+section:nth-child(2) { clear: both; }
+#prodlist h2 { margin-left: 25px; }
+#prodlist ul { height: 150px; margin: 50px 0 75px 65px; }
+#prodlist li { float: left; margin-right: 55px; }
+#prodlist div { width: 120px; height: 120px; background: #dcdcdc; border-radius: 10px; }
+#prodlist p { text-align: center; }
+
+
+/*footer 스타일*/
+footer { clear: both; border-top: 3px solid black; height: 180px; }
+footer ul { float: left; margin-right: 80px; }
+footer ul:first-child { margin-left: 75px; }
